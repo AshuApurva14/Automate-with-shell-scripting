@@ -12,6 +12,6 @@ for i in $NUMBER_OF_DIR
 do 
 
    mkdir -p $DIR_PATH/Day_$i
-   echo "directory created successfully...!"
+   echo "Day_$i directory created successfully...!"
 done
 
