@@ -8,10 +8,10 @@ echo -e "Let's create a directory \n"
 NUMBER_OF_DIR=$1
 DIR_PATH=/workspaces/Me_Learning_Shell_scripting/daily_practice_Series
 
-for i in $NUMBER_OF_DIR
-do 
+for i in $NUMBER_OF_DIR;do
 
    mkdir -p $DIR_PATH/Day_$i
    echo "Day_$i directory created successfully...!"
+   
 done
 
