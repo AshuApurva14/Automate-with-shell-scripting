@@ -4,14 +4,26 @@ set -e
 
 echo -e "Let's create a directory \n"
 
-
 NUMBER_OF_DIR=$1
-DIR_PATH=/workspaces/Me_Learning_Shell_scripting/daily_practice_Series
+DIR_PATH=/workspaces/Automate-with-shell-scripting/daily_practice_Series
 
-for i in $NUMBER_OF_DIR;do
+if [[ -d $DIR_PATH ]]; then
+  
+  echo -e "Provided directory exists!..."
+
+  for i in $NUMBER_OF_DIR
+  do
 
    mkdir -p $DIR_PATH/Day_$i
    echo "Day_$i directory created successfully...!"
-   
-done
+
+  done
+
+else
+  
+  echo "Provided directory path does not exists!. Please check and verify"
+
+fi
+
+
 
